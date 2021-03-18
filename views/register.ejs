@@ -1,0 +1,152 @@
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+
+<div class="container">
+
+
+	<form action="/register" method="POST">
+		<h1>Survey Form</h1>
+		<br>
+
+		<div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="inputEmail3" placeholder="username" name="username">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+			<div class="col-sm-10">
+				<input type="email" class="form-control" id="inputEmail3" placeholder="@email" name="email">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="inputEmail3" placeholder="age" name="age">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label for="inputPassword3" class="col-sm-2 col-form-label">Which Option best describes your current
+				role?</label>
+
+			<select class="custom-select  " id="inlineFormCustomSelect" style="width: 400px;height: 50px;"
+				name="bestme">
+				<option selected>Choose...</option>
+				<option value="1">Student</option>
+				<option value="2">Teacher</option>
+				<option value="3">Engineer</option>
+			</select>
+		</div>
+		<div class="form-group row">
+			<label for="inputPassword3" class="col-sm-2 col-form-label"> *How likely is that you would recommend freecodecamp to a friend?
+				 </label>
+
+		    <div class="col">
+				<br>
+				<div class="form-check">
+					<input class="form-check-input" type="radio"   id="exampleRadios1" value="option1"   name="willyouprefercodecamp">
+					<label class="form-check-label" for="exampleRadios1">
+					  Definitely
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio"   id="exampleRadios2" value="option2" name="willyouprefercodecamp">
+					<label class="form-check-label" for="exampleRadios2">
+					  May be
+					</label>
+				  </div>
+				  <div class="form-check disabled">
+					<input class="form-check-input" type="radio"   id="exampleRadios3" value="option3" name="willyouprefercodecamp">
+					<label class="form-check-label" for="exampleRadios3">
+					  Not Sure
+					</label>
+				  </div>
+			</div>
+
+		 
+		</div>
+
+
+
+
+
+		<div class="form-group row">
+			<label for="inputPassword3" class="col-sm-2 col-form-label">What do you like most in FCC?
+				 </label>
+
+			<select class="custom-select  " id="inlineFormCustomSelect" style="width: 400px;height: 50px;"
+				name="FCC">
+				<option selected>Choose...</option>
+				<option value="1">Culture</option>
+				<option value="2">Working Style</option>
+				<option value="3">Scalability</option>
+			</select>
+		</div>
+
+		 
+		<div class="form-group row">
+			<label for="inputPassword3" class="col-sm-2 col-form-label"> *Things that should be improved in the future(check all the ability)?
+				 </label>
+
+		    <div class="col">
+				<br>
+				<div class="form-check">
+					<input class="form-check-input" type="radio"   id="exampleRadios1" value="option1"   name="futureimprovements">
+					<label class="form-check-label" for="exampleRadios1">
+					  Front End Projects
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="radio"   id="exampleRadios2" value="option2" name="futureimprovements">
+					<label class="form-check-label" for="exampleRadios2">
+					  Back End Projects
+					</label>
+				  </div>
+				  <div class="form-check disabled">
+					<input class="form-check-input" type="radio"   id="exampleRadios3" value="option3" name="futureimprovements">
+					<label class="form-check-label" for="exampleRadios3">
+					  Data Visualisation
+					</label>
+				  </div>
+			</div>
+
+		 
+		</div>
+
+
+
+		
+
+		 
+
+
+
+
+
+		<div class="form-group row">
+			<div class="col-sm-10">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
